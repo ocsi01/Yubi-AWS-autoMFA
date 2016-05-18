@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Yubikey MFA support for AWS Management Console login",
+  "description": "This extension auto populates the MFA token to the AWS login form from Yubikey.",
+  "version": "1.1",
+  "author": "Adam Ocsvari - ocsi01@gmail.com",
+
+
+  "browser_action": {
+  },
+  "content_scripts": [
+        {
+            "matches": [
+                "https://signin.aws.amazon.com/*"
+            ],
+            "js": [
+                "jquery.js",
+                "fill.js"
+            ]
+        }],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "https://localhost/"
+  ]
+}

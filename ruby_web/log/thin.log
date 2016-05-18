@@ -1,0 +1,5 @@
+Writing PID to tmp/pids/thin.pid
+Thin web server (v1.6.3 codename Protein Powder)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3000, CTRL+C to stop
+Exiting!
